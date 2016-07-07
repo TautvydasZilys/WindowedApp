@@ -128,5 +128,11 @@
     <ClInclude Include="..\Source\PlatformSpecific\Windowing\Virtual\Window.h">
       <Filter>PlatformSpecific\Windowing\Virtual</Filter>
     </ClInclude>
+    <ClInclude Include="..\Source\Graphics\PixelShader.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Graphics\VertexShader.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -277,6 +277,32 @@ D3D11BackBuffer* D3D11Context::CreateBackBuffer(void* windowHandle, uint32_t wid
 	return new D3D11BackBuffer(m_Device.Get(), std::move(swapChain2), kBackBufferFormat, m_SupportsTearing);
 }
 
+VertexShader* D3D11Context::CreateVertexShader(const uint8_t* byteCode, size_t length) const
+{
+	ID3D11VertexShader* shader;
+	auto hr = m_Device->CreateVertexShader(byteCode, length, nullptr, &shader);
+	Assert(SUCCEEDED(hr));
+	return shader;
+}
+
+PixelShader* D3D11Context::CreatePixelShader(const uint8_t* byteCode, size_t length) const
+{
+	ID3D11PixelShader* shader;
+	auto hr = m_Device->CreatePixelShader(byteCode, length, nullptr, &shader);
+	Assert(SUCCEEDED(hr));
+	return shader;
+}
+
+void D3D11Context::SetActiveVertexShader(VertexShader* vertexShader) const
+{
+	m_DeviceContext->VSSetShader(static_cast<ID3D11VertexShader*>(vertexShader), nullptr, 0);
+}
+
+void D3D11Context::SetActivePixelShader(PixelShader* pixelShader) const
+{
+	m_DeviceContext->PSSetShader(static_cast<ID3D11PixelShader*>(pixelShader), nullptr, 0);
+}
+
 void D3D11Context::BindTextures(ShaderStage shaderStage, const Texture* const* textures, uint32_t startingSlot, uint32_t textureCount) const
 {
 	auto views = static_cast<ID3D11ShaderResourceView**>(alloca(sizeof(ID3D11ShaderResourceView*) * textureCount));

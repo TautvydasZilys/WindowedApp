@@ -9,4 +9,8 @@
 #include "PlatformSpecific/Graphics/D3D11/D3D11Context.h"
 typedef D3D11Context GraphicsContext;
 
+#else
+
+#error Unknown graphics API
+
 #endif

@@ -1,7 +1,5 @@
 #pragma once
 
-#include "RenderTarget.h"
-
 #if SUPPORTS_MULTIPLE_GFX_APIS
 
 #include "PlatformSpecific/Graphics/Virtual/BackBuffer.h"
@@ -10,5 +8,9 @@
 
 #include "PlatformSpecific/Graphics/D3D11/D3D11BackBuffer.h"
 typedef D3D11BackBuffer BackBuffer;
+
+#else
+
+#error Unknown graphics API
 
 #endif

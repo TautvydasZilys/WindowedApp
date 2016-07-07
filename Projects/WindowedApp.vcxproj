@@ -38,9 +38,11 @@
     <ClInclude Include="..\Source\Core\ProgramLoop.h" />
     <ClInclude Include="..\Source\Graphics\BackBuffer.h" />
     <ClInclude Include="..\Source\Graphics\GraphicsContext.h" />
+    <ClInclude Include="..\Source\Graphics\PixelShader.h" />
     <ClInclude Include="..\Source\Graphics\RenderTarget.h" />
     <ClInclude Include="..\Source\Graphics\ShaderStage.h" />
     <ClInclude Include="..\Source\Graphics\Texture.h" />
+    <ClInclude Include="..\Source\Graphics\VertexShader.h" />
     <ClInclude Include="..\Source\PlatformSpecific\Graphics\D3D11\D3D11BackBuffer.h" />
     <ClInclude Include="..\Source\PlatformSpecific\Graphics\D3D11\D3D11Context.h" />
     <ClInclude Include="..\Source\PlatformSpecific\Graphics\D3D11\D3D11Texture.h" />
