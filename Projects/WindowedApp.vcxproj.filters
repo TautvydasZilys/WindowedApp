@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Windowing">
+      <UniqueIdentifier>{e7c0c7a3-645a-4de7-8af7-3d41b1540441}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{98555e88-ab40-46a3-bbfc-66850b3073b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlatformSpecific">
+      <UniqueIdentifier>{7ec5881e-d8cc-46de-91d5-85e015f88005}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlatformSpecific\Graphics">
+      <UniqueIdentifier>{314f358d-8d28-4d7c-b049-456d399413d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlatformSpecific\Graphics\D3D11">
+      <UniqueIdentifier>{f3c066ee-4241-44e2-8350-6c67840a8455}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlatformSpecific\Windowing">
+      <UniqueIdentifier>{66d8cca7-10a1-4c47-8aac-5e039de2fa16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlatformSpecific\EntryPoints">
+      <UniqueIdentifier>{b84e7a91-92f0-424a-a04c-e25127bb898f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{d5fbda7e-b4e7-48fe-b6b1-dbc21e7c7377}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{ccffe30a-94dd-4731-b3c7-ae0f1b37eab5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlatformSpecific\Graphics\Virtual">
+      <UniqueIdentifier>{49431f3e-646b-4c56-94c2-24ee1ecd6b5c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\Utils\Log.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\PrecompiledHeader.cpp" />
+    <ClCompile Include="..\Source\PlatformSpecific\Graphics\D3D11\D3D11Context.cpp">
+      <Filter>PlatformSpecific\Graphics\D3D11</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\PlatformSpecific\Windowing\Win32\Win32Window.cpp">
+      <Filter>PlatformSpecific\Windowing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\ProgramLoop.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\PlatformSpecific\EntryPoints\WindowsDesktopEntryPoint.cpp">
+      <Filter>PlatformSpecific\EntryPoints</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\PlatformSpecific\Graphics\D3D11\D3D11BackBuffer.cpp">
+      <Filter>PlatformSpecific\Graphics\D3D11</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\PlatformSpecific\Graphics\D3D11\D3D11RenderTarget.cpp">
+      <Filter>PlatformSpecific\Graphics\D3D11</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\PlatformSpecific\Graphics\D3D11\D3D11Texture.cpp">
+      <Filter>PlatformSpecific\Graphics\D3D11</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\Windowing\Window.h">
+      <Filter>Windowing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\Log.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Utils\NonCopyable.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\PrecompiledHeader.h" />
+    <ClInclude Include="..\Source\PlatformSpecific\Graphics\D3D11\D3D11Context.h">
+      <Filter>PlatformSpecific\Graphics\D3D11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\PlatformSpecific\Graphics\D3D11\DXGIMisc.h">
+      <Filter>PlatformSpecific\Graphics\D3D11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\PlatformSpecific\Windowing\Win32\Win32Window.h">
+      <Filter>PlatformSpecific\Windowing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\ProgramLoop.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\PrecompiledHeaderWindows.h" />
+    <ClInclude Include="..\Source\PlatformSpecific\Graphics\D3D11\D3D11BackBuffer.h">
+      <Filter>PlatformSpecific\Graphics\D3D11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Graphics\GraphicsContext.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Graphics\BackBuffer.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Graphics\RenderTarget.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Graphics\Texture.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\PlatformSpecific\Graphics\D3D11\D3D11RenderTarget.h">
+      <Filter>PlatformSpecific\Graphics\D3D11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\PlatformSpecific\Graphics\D3D11\D3D11Texture.h">
+      <Filter>PlatformSpecific\Graphics\D3D11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Graphics\ShaderStage.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\PlatformSpecific\Graphics\Virtual\BackBuffer.h">
+      <Filter>PlatformSpecific\Graphics\Virtual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\PlatformSpecific\Graphics\Virtual\GraphicsContext.h">
+      <Filter>PlatformSpecific\Graphics\Virtual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\PlatformSpecific\Graphics\Virtual\RenderTarget.h">
+      <Filter>PlatformSpecific\Graphics\Virtual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\PlatformSpecific\Graphics\Virtual\Texture.h">
+      <Filter>PlatformSpecific\Graphics\Virtual</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
