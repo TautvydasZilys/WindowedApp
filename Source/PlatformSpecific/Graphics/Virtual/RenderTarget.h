@@ -1,11 +1,12 @@
 #pragma once
 
-class Texture;
+#include "Utils/NonCopyable.h"
 
-class RenderTarget
+class RenderTarget :
+	public NonCopyable
 {
 public:
 	virtual ~RenderTarget() = 0 { }
 
-	virtual const Texture* AsTexture() const = 0;
+	virtual const class Texture* AsTexture() const = 0;
 };

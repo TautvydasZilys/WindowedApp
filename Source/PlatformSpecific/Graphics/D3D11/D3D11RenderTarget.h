@@ -25,4 +25,3 @@ private:
 	WRL::ComPtr<ID3D11RenderTargetView> m_RenderTargetView;
 	WRL::ComPtr<ID3D11DepthStencilView> m_DepthStencilView;
 };
-

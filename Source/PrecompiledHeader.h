@@ -29,7 +29,7 @@
 #endif
 
 #ifndef SUPPORTS_MULTIPLE_GFX_APIS
-#define SUPPORTS_MULTIPLE_GFX_APIS 1
+#define SUPPORTS_MULTIPLE_GFX_APIS 0
 #endif
 
 #define Assert(x) do { if (!(x)) DEBUGBREAK; } while (false, false)

@@ -31,6 +31,12 @@
     <Filter Include="PlatformSpecific\Graphics\Virtual">
       <UniqueIdentifier>{49431f3e-646b-4c56-94c2-24ee1ecd6b5c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="PlatformSpecific\Windowing\Win32">
+      <UniqueIdentifier>{36975374-98a4-4928-b802-65d0bd6a8821}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlatformSpecific\Windowing\Virtual">
+      <UniqueIdentifier>{64ee5439-740e-4145-93d0-0521530011cc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Source\Utils\Log.cpp">
@@ -39,9 +45,6 @@
     <ClCompile Include="..\Source\PrecompiledHeader.cpp" />
     <ClCompile Include="..\Source\PlatformSpecific\Graphics\D3D11\D3D11Context.cpp">
       <Filter>PlatformSpecific\Graphics\D3D11</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Source\PlatformSpecific\Windowing\Win32\Win32Window.cpp">
-      <Filter>PlatformSpecific\Windowing</Filter>
     </ClCompile>
     <ClCompile Include="..\Source\Core\ProgramLoop.cpp">
       <Filter>Core</Filter>
@@ -57,6 +60,9 @@
     </ClCompile>
     <ClCompile Include="..\Source\PlatformSpecific\Graphics\D3D11\D3D11Texture.cpp">
       <Filter>PlatformSpecific\Graphics\D3D11</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\PlatformSpecific\Windowing\Win32\Win32Window.cpp">
+      <Filter>PlatformSpecific\Windowing\Win32</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -75,9 +81,6 @@
     </ClInclude>
     <ClInclude Include="..\Source\PlatformSpecific\Graphics\D3D11\DXGIMisc.h">
       <Filter>PlatformSpecific\Graphics\D3D11</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Source\PlatformSpecific\Windowing\Win32\Win32Window.h">
-      <Filter>PlatformSpecific\Windowing</Filter>
     </ClInclude>
     <ClInclude Include="..\Source\Core\ProgramLoop.h">
       <Filter>Core</Filter>
@@ -118,6 +121,12 @@
     </ClInclude>
     <ClInclude Include="..\Source\PlatformSpecific\Graphics\Virtual\Texture.h">
       <Filter>PlatformSpecific\Graphics\Virtual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\PlatformSpecific\Windowing\Win32\Win32Window.h">
+      <Filter>PlatformSpecific\Windowing\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\PlatformSpecific\Windowing\Virtual\Window.h">
+      <Filter>PlatformSpecific\Windowing\Virtual</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

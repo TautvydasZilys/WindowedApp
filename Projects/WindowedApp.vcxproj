@@ -50,6 +50,7 @@
     <ClInclude Include="..\Source\PlatformSpecific\Graphics\Virtual\GraphicsContext.h" />
     <ClInclude Include="..\Source\PlatformSpecific\Graphics\Virtual\RenderTarget.h" />
     <ClInclude Include="..\Source\PlatformSpecific\Graphics\Virtual\Texture.h" />
+    <ClInclude Include="..\Source\PlatformSpecific\Windowing\Virtual\Window.h" />
     <ClInclude Include="..\Source\PlatformSpecific\Windowing\Win32\Win32Window.h" />
     <ClInclude Include="..\Source\PrecompiledHeader.h" />
     <ClInclude Include="..\Source\PrecompiledHeaderWindows.h" />
